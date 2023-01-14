@@ -56,6 +56,7 @@ export default function Home() {
 
         <label> Username:</label>
         <input
+          class='textbox'
           type="text"
           id="userName"
           name='userName'
@@ -66,7 +67,7 @@ export default function Home() {
           onChange={(e => setFormData({ ...formData, userName: e.target.value }))}
         />
 
-        <button type='submit' onClick={() => CheckLogin()}>Sumbit</button>
+        <button class='button' type='submit' onClick={() => CheckLogin()}>Sumbit</button>
       </main>
     </>
   )
